@@ -6,8 +6,8 @@ const userSchema = new mongoose.Schema({
     email: { type: String, required:true, unique:true },
     imageUrl: { type: String, required:true},
     cartItems: { type: Object, default: {}}
-},{ minimize: false})
+}, { minimize: false})
 
-const User = mongoose.models.user || mongoose.model('user',userSchema)
+const User = mongoose.models.user || mongoose.model('user',userSchema);
 
-export default User
+export default User;
